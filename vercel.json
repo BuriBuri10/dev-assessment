@@ -7,10 +7,7 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "apprewards.wsgi"
+            "dest": "apprewards/wsgi.py"
         }
-    ],
-    "rewrites": [
-      { "source": "/(.*)", "destination": "/" }
     ]
 }
