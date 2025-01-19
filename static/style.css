@@ -1,0 +1,47 @@
+/* body {
+    background-color:black;
+}
+
+.dz{
+    border: dashed !important;
+    border-color:aliceblue !important;
+    border-radius: 10px !important;
+}
+
+.dz:hover{
+    background-color:aqua !important;
+}
+
+.checked {
+    color: red;
+}
+
+.my-btn {
+    background-color: inherit !important;
+    border: 0 !important;
+} */
+
+body{
+    background-color: black;
+    color:black;
+  }
+  
+  .dz {
+    border: dashed !important;
+    border-color: orangered !important;
+    border-radius: 10px !important;
+  }
+  .dz:hover {
+    background-color: black !important;
+  }
+  .checked {
+    color: red;
+  }
+  .my-btn {
+    background-color: inherit !important;
+    border: 0 !important;
+  }
+
+
+  
+ 

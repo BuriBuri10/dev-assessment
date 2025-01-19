@@ -1,0 +1,110 @@
+<html>
+  <head>
+      <title>App Reward System</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+  </head>
+  <body class="bg-gray-900">
+      <nav class="bg-gray-800 shadow-md">
+          <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+              <a href="/" class="text-xl font-bold text-white">App Reward System</a>
+              <ul class="flex space-x-4">
+                  <li>
+                      <a href="/superadmin" class="text-white hover:text-gray-400">Admin</a>
+                  </li>
+                  <li>
+                      <a class="text-white hover:text-gray-400" href="/notifications">
+                          <i class="fas fa-bell"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="text-white hover:text-gray-400" href="/profile_page">
+                          <i class="fas fa-user-circle"></i>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+
+    <div class="flex flex-col items-center">
+      <!-- User Interface -->
+      <div class="w-full max-w-4xl bg-gray-800 shadow-md rounded-lg my-4">
+        <div class="bg-gray-700 p-4 text-center text-xl font-semibold relative">
+          Hello John
+        </div>
+        <div class="flex flex-col md:flex-row">
+          <div class="w-full md:w-1/4 bg-gray-700 p-4">
+            <button class="w-full bg-blue-500 text-white py-2 px-4 rounded mb-4">
+              <a href="" class="text-white hover:text-gray-400">Home</a>
+            </button>
+            <button class="w-full bg-purple-500 text-white py-2 px-4 rounded mb-4">
+              <a href="/profile_page" class="text-white hover:text-gray-400">Profile</a>
+            </button>
+            <button class="w-full bg-purple-500 text-white py-2 px-4 rounded mb-4">
+              <a href="/points" class="text-white hover:text-gray-400">Points</a>
+            </button>
+            <button class="w-full bg-purple-500 text-white py-2 px-4 rounded mb-4">
+              <a href="/tasks" class="text-white hover:text-gray-400">Task</a>
+            </button>
+            <button class="w-full bg-purple-500 text-white py-2 px-4 rounded hover-bg-dark transition duration-300" type="submit">
+              <a href="/log_out" class="text-white hover:text-gray-400">Logout</a>
+            </button>
+          </div>
+          
+          <div class="w-full md:w-3/4 p-8">
+            <div class="bg-gray-700 p-4 rounded-lg mb-4 flex justify-between items-center">
+              <div class="flex items-center">
+                <i class="fab fa-facebook text-4xl text-blue-600 mr-4"></i>
+                <div>
+                  <div class="text-lg font-semibold">Facebook</div>
+                  <a class="text-blue-400" href="/Facebook">View in Detail &gt;</a>
+                </div>
+              </div>
+              <div class="bg-teal-500 text-white py-2 px-4 rounded">100 POINTS</div>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg mb-4 flex justify-between items-center">
+              <div class="flex items-center">
+                <i class="fab fa-snapchat text-4xl text-yellow-500 mr-4"></i>
+                <div>
+                  <div class="text-lg font-semibold">Snapchat</div>
+                  <a class="text-blue-400" href="/Snapchat">View in Detail &gt;</a>
+                </div>
+              </div>
+              <div class="bg-teal-500 text-white py-2 px-4 rounded">75 POINTS</div>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg mb-4 flex justify-between items-center">
+              <div class="flex items-center">
+                <i class="fab fa-instagram text-4xl text-pink-500 mr-4"></i>
+                <div>
+                  <div class="text-lg font-semibold">Instagram</div>
+                  <a class="text-blue-400" href="/Instagram">View in Detail &gt;</a>
+                </div>
+              </div>
+              <div class="bg-teal-500 text-white py-2 px-4 rounded">120 POINTS</div>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg mb-4 flex justify-between items-center">
+              <div class="flex items-center">
+                <i class="fab fa-twitter text-4xl text-blue-400 mr-4"></i>
+                <div>
+                  <div class="text-lg font-semibold">Twitter</div>
+                  <a class="text-blue-400" href="/Twitter">View in Detail &gt;</a>
+                </div>
+              </div>
+              <div class="bg-teal-500 text-white py-2 px-4 rounded">150 POINTS</div>
+            </div>
+            <div class="bg-gray-700 p-4 rounded-lg mb-4 flex justify-between items-center">
+              <div class="flex items-center">
+                <i class="fab fa-linkedin text-4xl text-blue-700 mr-4"></i>
+                <div>
+                  <div class="text-lg font-semibold">LinkedIn</div>
+                  <a class="text-blue-400" href="/LinkedIn">View in Detail &gt;</a>
+                </div>
+              </div>
+              <div class="bg-teal-500 text-white py-2 px-4 rounded">150 POINTS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

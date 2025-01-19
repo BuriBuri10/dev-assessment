@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{%block body%}
+
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   User Profile
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-900 text-white">
+  <div class="flex flex-col items-center">
+   <!-- User Profile Interface -->
+   <div class="w-full max-w-4xl bg-gray-800 shadow-md rounded-lg my-4">
+    <div class="bg-gray-700 p-4 text-center text-xl font-semibold relative">
+     User Profile
+    </div>
+    <div class="flex flex-col md:flex-row">
+     <div class="w-full md:w-1/4 bg-gray-700 p-4">
+      <button class="w-full bg-purple-500 text-white py-2 px-4 rounded mb-4">
+        <a href="/" class="text-white hover:text-gray-400">Home</a>
+      </button>
+      <button class="w-full bg-blue-500 text-white py-2 px-4 rounded mb-4">
+        <a href="/profile_page" class="text-white hover:text-gray-400">Profile</a>
+      </button>
+      <button class="w-full bg-purple-500 text-white py-2 px-4 rounded mb-4">
+        <a href="/points" class="text-white hover:text-gray-400">Points</a>
+      </button>
+      <button class="w-full bg-purple-500 text-white py-2 px-4 rounded mb-4">
+        <a href="/tasks" class="text-white hover:text-gray-400">Task</a>
+      </button>
+      <button class="w-full bg-purple-500 text-white py-2 px-4 rounded">
+       <a href="/log_out" class="text-white hover:text-gray-400">Logout</a>
+      </button>
+     </div>
+     <div class="w-full md:w-3/4 p-8">
+      {% comment %} <div class="flex justify-center mb-8">
+       <img alt="Profile picture of the user" class="w-32 h-32 rounded-full" height="128" src="https://storage.googleapis.com/a1aa/image/APe678p-4xjqlrd3bR3MqpKD0HwOoceAChPpxsjlNbs.jpg" width="128"/>
+      </div> {% endcomment %}
+      <div class="text-center mb-8">
+       <h2 class="text-2xl font-semibold">
+        John Doe
+       </h2>
+       <p class="text-gray-400">
+        johndoe@example.com
+       </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+       <div>
+        <label class="block text-gray-400 mb-2" for="username">
+         Username
+        </label>
+        <input class="border p-2 rounded bg-gray-700 text-white w-full" id="username" placeholder="John Doe" type="text"/>
+       </div>
+       <div>
+        <label class="block text-gray-400 mb-2" for="email">
+         Email
+        </label>
+        <input class="border p-2 rounded bg-gray-700 text-white w-full" id="email" placeholder="johndoe@example.com" type="email"/>
+       </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+       <div>
+        <label class="block text-gray-400 mb-2" for="password">
+         Password
+        </label>
+        <input class="border p-2 rounded bg-gray-700 text-white w-full" id="password" placeholder="********" type="password"/>
+       </div>
+       <div>
+        <label class="block text-gray-400 mb-2" for="confirm-password">
+         Confirm Password
+        </label>
+        <input class="border p-2 rounded bg-gray-700 text-white w-full" id="confirm-password" placeholder="********" type="password"/>
+       </div>
+      </div>
+      <button class="bg-teal-500 text-white py-2 px-4 rounded">
+       Update Profile
+      </button>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+
+{%endblock body%}
