@@ -52,7 +52,7 @@ def log_out(request):
 def LinkedIn(request):
     return render(request, 'LinkedIn.html')
 def Facebook(request):
-    return render(request, 'Facebook.html')
+    return render(request, 'facebook.html')
 def Twitter(request):
     return render(request, 'Twitter.html')
 def Instagram(request):
