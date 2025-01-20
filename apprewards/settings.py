@@ -77,14 +77,14 @@ WSGI_APPLICATION = 'apprewards.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': BASE_DIR / 'db.sqlite3',
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': 'YCdIsdqcWeVWwYtjNQaSqLZVtFfIwgnm',
-        'HOST': 'autorack.proxy.rlwy.net',
-        'PORT': '30253',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': 'railway',
+        # 'USER': 'postgres',
+        # 'PASSWORD': 'YCdIsdqcWeVWwYtjNQaSqLZVtFfIwgnm',
+        # 'HOST': 'autorack.proxy.rlwy.net',
+        # 'PORT': '30253',
     }
 }
 
