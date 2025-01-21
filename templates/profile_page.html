@@ -13,6 +13,7 @@
   </script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
  </head>
+ 
  <body class="bg-gray-900 text-white">
   <div class="flex flex-col items-center">
    <!-- User Profile Interface -->
@@ -23,30 +24,37 @@
     <div class="flex flex-col md:flex-row">
      <div class="w-full md:w-1/4 bg-gray-700 p-4">
       <button class="w-full bg-purple-500 text-white py-2 px-4 rounded mb-4">
-        <a href="/" class="text-white hover:text-gray-400">Home</a>
+       <a class="text-white hover:text-gray-400" href="/">
+        Home
+       </a>
       </button>
       <button class="w-full bg-blue-500 text-white py-2 px-4 rounded mb-4">
-        <a href="/profile_page" class="text-white hover:text-gray-400">Profile</a>
+       <a class="text-white hover:text-gray-400" href="/profile_page">
+        Profile
+       </a>
       </button>
       <button class="w-full bg-purple-500 text-white py-2 px-4 rounded mb-4">
-        <a href="/points" class="text-white hover:text-gray-400">Points</a>
+       <a class="text-white hover:text-gray-400" href="/user_points">
+        Points
+       </a>
       </button>
       <button class="w-full bg-purple-500 text-white py-2 px-4 rounded mb-4">
-        <a href="/tasks" class="text-white hover:text-gray-400">Task</a>
+       <a class="text-white hover:text-gray-400" href="/tasks">
+        Task
+       </a>
       </button>
       <button class="w-full bg-purple-500 text-white py-2 px-4 rounded">
-       <a href="/log_out" class="text-white hover:text-gray-400">Logout</a>
+       <a class="text-white hover:text-gray-400" href="/log_out">
+        Logout
+       </a>
       </button>
      </div>
      <div class="w-full md:w-3/4 p-8">
-      {% comment %} <div class="flex justify-center mb-8">
-       <img alt="Profile picture of the user" class="w-32 h-32 rounded-full" height="128" src="https://storage.googleapis.com/a1aa/image/APe678p-4xjqlrd3bR3MqpKD0HwOoceAChPpxsjlNbs.jpg" width="128"/>
-      </div> {% endcomment %}
       <div class="text-center mb-8">
-       <h2 class="text-2xl font-semibold text-white">
+       <h2 class="text-2xl font-semibold text-white" id="display-username">
         Sakata
        </h2>
-       <p class="text-gray-400">
+       <p class="text-gray-400" id="display-email">
         sakata@gmail.com
        </p>
       </div>
@@ -78,13 +86,23 @@
         <input class="border p-2 rounded bg-gray-700 text-white w-full" id="confirm-password" placeholder="********" type="password"/>
        </div>
       </div>
-      <button class="bg-teal-500 text-white py-2 px-4 rounded">
+      <button class="bg-teal-500 text-white py-2 px-4 rounded" onclick="updateProfile()">
        Update Profile
       </button>
      </div>
     </div>
    </div>
   </div>
+
+  <script>
+    function updateProfile() {
+      const username = document.getElementById('username').value;
+      const email = document.getElementById('email').value;
+      document.getElementById('display-username').innerText = username;
+      document.getElementById('display-email').innerText = email;
+    }
+  </script>
+  
  </body>
 </html>
 
