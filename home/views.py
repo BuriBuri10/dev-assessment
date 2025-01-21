@@ -16,6 +16,8 @@ def profile_page(request):
     return render(request, 'profile_page.html')
 def points(request):
     return render(request, 'points.html')
+def user_points(request):
+    return render(request, 'user_points.html')
 def tasks(request):
     return render(request, 'tasks.html')
 def notifications(request):
